@@ -72,7 +72,7 @@ const thoughtController = {
                 return res.status(404).json({message: "Thought removed, but no user found with this id!"})
             }
             res.json({message: "Thought deleted successfully!"});
-            //res.json(dbThoughtData)
+            
         } catch (err) {
             console.log(err)
             res.status(500).json(err)
